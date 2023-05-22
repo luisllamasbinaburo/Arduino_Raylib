@@ -1,6 +1,6 @@
-# Raylib Arduino
+# Arduino Raylib
 
-The Raylib Arduino project is a library that allows us to use Raylib to simulate the same visual output we would have in an Arduino program. 
+The Arduino Raylib is a library that allows you to simulate the behaviors and visual output we would have in an Arduino program, from your computer.
 
 This tool was created because I like creating libraries for Arduino, specially visual effects and animations using a TFT and ESP32 (for example).
 
