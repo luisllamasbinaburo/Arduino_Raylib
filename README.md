@@ -4,16 +4,17 @@ The Raylib Arduino project is a library that allows us to use Raylib to simulate
 
 This tool was created because I like creating libraries for Arduino, specially visual effects and animations using a TFT and ESP32 (for example).
 
-For me its very convenient for me to be able to debug and visualize the results in the computer, without having to upload the project to an actual Arduino.
+Its very convenient for me to be able to debug and visualize the results in the computer, without having to upload the project to an actual Arduino.
 
 ![](https://github.com/luisllamasbinaburo/raylib_arduino/blob/master/screenshot.png)
 
-### Key Features
+## Key Features
 - Facilitates the development of Arduino applications
 - Offers a syntax similar to that of a real program
 - Allow use the computer debug
 - Utilizes Raylib to provide a graphical visualization similar to TFT_eSPI
 
+## When to use it
 ### What it is
 
 It's a tool designed to streamline the development process of Arduino applications, by employing a syntax similar to that of a real Arduino program.
@@ -26,7 +27,7 @@ It uses Raylib and Raygui to create visual programs and animations. A simulation
 
 It's not a complete simulator of Arduino code or hardware (and never will be). It does not provide precise emulation of all Arduino-specific components and functionalities. Of course, third party libraries for Arduino are not supported.
 
-### HOW TO USE
+## How to use
 
 Just clone the repo, and replace the code inside `main.hpp` with you Arduino code.
 
@@ -68,10 +69,11 @@ void setup()
 }
 ```
 
-### TO-DO
+## TO-DO
 - [x] Millis, micros, delay, and delay micros
 - [x] Serial.print to console output
-- [x] pinmode, digitalWrite, digitalRead mocks (16 gpio simulated)
+- [x] digitalWrite, digitalRead mocks (16 gpio simulated)
+- [x] pinmode, virtual pin behaves different when input / output
 - [x] TFT_eSPI drawing funtions (point, line, circule, rectangule...)
 - [x] RGB565 - RGB conversion
 - [x] Pushimage from RGB565 uint16 array 
