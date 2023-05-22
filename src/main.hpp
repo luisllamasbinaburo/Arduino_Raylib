@@ -74,10 +74,10 @@ void Update()
 
 void Render()
 {
-	lcd.fillScreen(TFT_BLACK);
+    lcd.fillScreen(TFT_BLACK);
 
     lcd.drawCircle(40, 40, 5, TFT_RED);
-	lcd.drawLine(40, 40, 80, 80, TFT_BLUE);
+    lcd.drawLine(40, 40, 80, 80, TFT_BLUE);
     lcd.drawString("HOLA", 200, 200, 12);
 
     sprite.pushImage(120, 40, 22, 59, icon);
@@ -86,10 +86,10 @@ void Render()
 
 void setup()
 {
-	pinMode(7, OUTPUT);
-	pinMode(8, OUTPUT);
-	pinMode(9, OUTPUT);
-	pinMode(10, OUTPUT);
+    pinMode(7, OUTPUT);
+    pinMode(8, OUTPUT);
+    pinMode(9, OUTPUT);
+    pinMode(10, OUTPUT);
 
     sprite.createSprite(22, 59);
 }
@@ -97,12 +97,12 @@ void setup()
 bool status = LOW;
 void loop()
 {
-	Update();
-	RAYLIB_RENDER(Render);
+    Update();
+    RAYLIB_RENDER(Render);
 
-	status = status == LOW ? HIGH : LOW;
-	digitalWrite(2, status);
-	
-	//delay(1000);
-	//println("hola");
+    status = status == LOW ? HIGH : LOW;
+    digitalWrite(2, status);
+    
+    //delay(1000);
+    //println("hola");
 }
