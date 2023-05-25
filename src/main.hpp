@@ -1,4 +1,4 @@
-#include <RaylibArduino.hpp>
+#include "../lib/arduino_raylib.hpp"
 
 #include <stdlib.h>
 #include <vector>

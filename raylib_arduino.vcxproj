@@ -141,7 +141,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>DEBUG;PLATFORM_DESKTOP;GRAPHICS_API_OPENGL_33;_WINSOCK_DEPRECATED_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>src;src\include;lib\raylib\src;lib\raylib\src\external;lib\raylib\src\external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src;src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <LanguageStandard>stdcpp20</LanguageStandard>
@@ -260,13 +260,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="src\bspline.hpp" />
-    <ClInclude Include="src\raygui.h" />
-    <ClInclude Include="src\RaylibArduino.hpp" />
-    <ClInclude Include="src\tft.hpp" />
+    <ClCompile Include="src\main.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\main.hpp" />
+    <ClInclude Include="lib\raygui.h" />
+    <ClInclude Include="lib\arduino_raylib.hpp" />
+    <ClInclude Include="lib\arduino_raylib_tft_espi.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
