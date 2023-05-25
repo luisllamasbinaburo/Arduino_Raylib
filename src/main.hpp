@@ -68,11 +68,7 @@ static const uint16_t icon[1298] = {
     0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
 };
 
-void Update()
-{
-}
-
-void Render()
+void Draw()
 {
     lcd.fillScreen(TFT_BLACK);
 
@@ -96,9 +92,8 @@ void setup()
 
 bool status = LOW;
 void loop()
-{
-    Update();
-    RAYLIB_RENDER(Render);
+{ 
+    ARDUINO_RAYLIB_DRAW(Draw);
 
     status = status == LOW ? HIGH : LOW;
     digitalWrite(2, status);

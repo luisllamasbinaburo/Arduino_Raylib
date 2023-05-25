@@ -248,11 +248,11 @@ void println(unsigned long long t, int = DEC) {std::cout << t << "\n";}
 void println(double t, int = 2) {std::cout << t << "\n";}
 
 
-void RAYLIB_RENDER(void (*render)())
+void ARDUINO_RAYLIB_DRAW(void (*draw)())
 {
     BeginDrawing();
     
-    render();
+    draw();
     
     DrawFPS(410, 25);
     EndDrawing();
