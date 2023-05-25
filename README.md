@@ -19,7 +19,7 @@ Its very convenient for me to be able to debug and visualize the results in the 
 
 It's a tool designed to streamline the development process of Arduino applications, by employing a syntax similar to that of a real Arduino program.
 
-Some funtions like `millis()`, `delay(2000)`, are provided. Also some 'mock' functions, like `digitalRead()` or `digitalWrite`. (mock means that doesn't have a real physical effect, but can be used to simulate real world behavior). Pinout are generic (1 to 16 GPIO), and not specific to any board.
+Some functions like `millis()`, `delay(2000)`, are provided. Also some 'mock' functions, like `digitalRead()` or `digitalWrite`. (mock means that doesn't have a real physical effect, but can be used to simulate real world behavior). Pinout are generic (1 to 16 GPIO), and not specific to any board.
 
 It uses Raylib and Raygui to create visual programs and animations. A simulation of the real TFT are provided. I use the sintax that you can find, for example, in Adafruit GPX or TFT_eSPI.
 
@@ -29,7 +29,10 @@ It's not a complete simulator of Arduino code or hardware (and never will be). I
 
 ## How to use
 
-Just clone the repo, and replace the code inside `main.hpp` with you Arduino code.
+- Clone the repo
+- Open solution in Visual Studio
+- Compile Raylib project (right click over project, select build)
+- Finally, replace the code inside `main.hpp` with you Arduino code, and run arduino_raylib to watch your code run in your computer. 
 
 For example
 ```cpp
